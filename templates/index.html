@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyFuture-AI Tech Stack App</title>
+</head>
+<body>
+    <h1>MyFuture-AI Tech Stack</h1>
+    <ul>
+        {% for component in tech_stack %}
+            <li>{{ component[0] }}</li>
+        {% endfor %}
+    </ul>
+
+    <form action="/add" method="post">
+        <input type="text" name="new_component" placeholder="Agregar nuevo componente">
+        <input type="submit" value="Agregar">
+    </form>
+</body>
+</html>
