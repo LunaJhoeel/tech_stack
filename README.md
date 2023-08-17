@@ -8,5 +8,5 @@ docker exec -it <mysql_container_id> /bin/bash
 mysql -u root -p
 create database tech_stack_db;
 
-# Error "Table 'tech_stack_db.tech_stack' doesn't exist"
-create table tech_stack_db.tech_stack (component varchar(255));
+# Error "Table 'tech_stack_db.tech_stack_table' doesn't exist"
+create table tech_stack_db.tech_stack_table (component varchar(255));
